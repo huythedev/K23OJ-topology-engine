@@ -1,0 +1,15 @@
+mysql-connector-python
+psycopg2-binary
+sentence-transformers
+# chromadb removed due to Python 3.14 compatibility issues
+# pydantic constraint removed
+pypdf
+requests
+python-dotenv
+tqdm
+beautifulsoup4
+markdown
+numpy
+# For AMD GPU support on Windows (Install manually if compatible version exists for your Python)
+# torch-directml
+

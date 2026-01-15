@@ -124,6 +124,6 @@ python src/main.py check --text "Given a graph with N nodes and M edges..."
 ```
 
 ## 🔧 Technical Details
-- **Embedding Model**: `sentence-transformers/all-MiniLM-L6-v2` (384-dimensional dense vector space).
+- **Embedding Model**: Uses `intfloat/multilingual-e5-small` for fast, accurate, and multilingual (including Vietnamese) embeddings.
 - **Similarity Metric**: Cosine Similarity.
 - **Storage**: Serialized Numpy arrays (via Pickle) for maximum portability and compatibility with newer Python versions where extensive vector DB libraries might have issues.

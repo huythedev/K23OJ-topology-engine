@@ -17,7 +17,7 @@ Unlike simple text matching, this engine uses **Sentence Transformers** (Deep Le
 
 ## 🛠️ Prerequisites
 
-- **Python 3.9+** (Tested on Python 3.14)
+- **Python 3.9+** (Recommend Python 3.10)
 - **Database Access**: Read access to the `onlinejudge` database.
 
 ## 📦 Installation

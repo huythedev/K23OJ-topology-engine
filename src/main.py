@@ -53,6 +53,8 @@ def cmd_index(args):
     # Clear existing index before starting (to avoid duplicates)
     engine.reset_index()
 
+    # Increased batch size to improve CPU memory bandwidth efficiency
+    # (Reading 4GB weights for 5 items is wasteful; 32 items amortizes the cost)
     batch_size = 32
     contents = []
     metadatas = []
@@ -125,6 +127,10 @@ def cmd_check(args):
     if not query_text.strip():
         print("Empty query text.")
         return
+
+    # print("Extracting logic from query...")
+    # Clean the query using the same LLM logic pipeline to ensure embedding space alignment
+    # query_text = engine._extract_logic(query_text)
 
     print("Searching for duplicates...")
     results = engine.search(query_text, n_results=5)

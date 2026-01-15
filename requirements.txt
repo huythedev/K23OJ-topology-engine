@@ -12,4 +12,10 @@ markdown
 numpy
 # For AMD GPU support on Windows (Install manually if compatible version exists for your Python)
 # torch-directml
+transformers
+accelerate
+protobuf
+sentencepiece
+tiktoken
+
 
